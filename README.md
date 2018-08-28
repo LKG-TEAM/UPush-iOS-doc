@@ -142,3 +142,29 @@ sdk在如下场景使用到定时器：
 }
 ```
 
+## 4. 日志相关
+
+1. MQTT库的日志格式是**\[classname\] xxx**，如下:
+
+![MQTT&#x5E93;&#x7684;&#x65E5;&#x5FD7;&#x622A;&#x56FE;](.gitbook/assets/1.jpg)
+
+  
+2. UPush自身业务的日志格式为:
+
+* 连接状态**\[UPUSH\] ======&gt;MQTTxxx&lt;=======**
+
+![UPush&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x7684;&#x65E5;&#x5FD7;&#x622A;&#x56FE;](.gitbook/assets/2.jpg)
+
+* 向MQTT发送消息**\[UPUSH\] xxx\(${topic}\)message: xxxxxx**
+
+![UPush&#x5411;MQTT&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x65E5;&#x5FD7;&#x622A;&#x56FE;](.gitbook/assets/3.jpg)
+
+ 
+
+* 其他**\[UPUSH\] xxx: xxxxx**
+
+![UPush&#x83B7;&#x53D6;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#x65E5;&#x5FD7;&#x7684;&#x622A;&#x56FE;](.gitbook/assets/4.jpg)
+
+  
+
+
